@@ -1,0 +1,7 @@
+﻿hour = int(input("Hora de inicio (horas): "))
+mins = int(input("Minuto de inicio (minutos): "))
+dura = int(input("Duración del evento (minutos): "))
+totalHours = int(hour  + (mins + dura) // 60)
+finalMins = int((mins + dura) % 60)
+extraDays = int(totalHours // 24)
+print("Endtime = " + str(totalHours - extraDays * 24) + ":" + str(finalMins))
